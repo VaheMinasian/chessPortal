@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<ui:composition template="/templates/page-template.xhtml">
+    <ui:param name="pageTitle" value="Product Details"/>
+    <ui:define name="panel-main">
+        <section class="product-details">
+            <h:graphicImage library="chess-shop" name="Images/img1.jpg" alt="Chess set 1"/>
+            <h:form>
+                <h1>Chess set 1</h1>
+                <p>Nice looking and feeling set, with traditional shaped figures. water and heat resistant.</p>
+                <p>Price: $ 45.00 - <h:commandLink>Add to cart</h:commandLink></p>
+                <p><h:outputLink value="index.xhtml">Back to Popular Products</h:outputLink></p>
+            </h:form>
+        </section>
+    </ui:define>
+</ui:composition>
+</html>

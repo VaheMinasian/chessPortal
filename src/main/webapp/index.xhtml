@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+<ui:composition template="/page-template.xhtml">
+
+    <ui:param name="pageTitle" value="Popular Products"/>
+    <ui:define name="panel-main">
+       
+        <section>
+            <h1>Popular Products</h1>
+            <h:form>
+                <ui:decorate template="/templates/product-summary.xhtml">
+                    <ui:param name="imageName" value="tmb1"/>
+                    <ui:param name="productName" value="Chess Set 1"/>
+                    <ui:param name="productPrice" value="95.00"/>
+                    <ui:define name="product-description">
+                        <p>Ice style chess set with traditional figure shapes.</p>
+                    </ui:define>
+                </ui:decorate>
+                <ui:decorate template="/templates/product-summary.xhtml">
+                    <ui:param name="imageName" value="guitar"/>
+                    <ui:param name="productName" value="Guitar"/>
+                    <ui:param name="productPrice" value="995.00"/>
+                    <ui:define name="product-description">
+                        <p>A nice and smooth touch of Sandal wood chess set.</p>
+                    </ui:define>
+                </ui:decorate>
+                <ui:decorate template="/templates/product-summary.xhtml">
+                    <ui:param name="imageName" value="saxophone"/>
+                    <ui:param name="productName" value="Saxophone"/>
+                    <ui:param name="productPrice" value="1195.00"/>
+                    <ui:define name="product-description">
+                        <p>Modern Geometrical chess figures gives a unique taste of game.</p>
+                    </ui:define>
+                </ui:decorate>
+                <ui:decorate template="/templates/product-summary.xhtml">
+                    <ui:param name="imageName" value="bassguitar"/>
+                    <ui:param name="productName" value="Bass Guitar"/>
+                    <ui:param name="productPrice" value="895.00"/>
+                    <ui:define name="product-description">
+                        <p>All rounded pieces with nice look and feel.</p>
+                    </ui:define>
+                </ui:decorate>
+                <ui:decorate template="/templates/product-summary.xhtml">
+                    <ui:param name="imageName" value="drumkit"/>
+                    <ui:param name="productName" value="Drum Kit"/>
+                    <ui:param name="productPrice" value="1249.00"/>
+                    <ui:define name="product-description">
+                        <p>Real elegant cut style chess set.</p>
+                    </ui:define>
+                </ui:decorate>
+            </h:form>
+        </section>
+    </ui:define>
+</ui:composition>
+</html>

@@ -23,7 +23,16 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <version>7.0</version>
             <scope>provided</scope>
         </dependency>
-       
+       <dependency>
+    		<groupId>com.sun.faces</groupId>
+    		<artifactId>jsf-api</artifactId>
+    		<version>2.2.12</version>
+		</dependency>
+		<dependency>
+    		<groupId>com.sun.faces</groupId>
+    		<artifactId>jsf-impl</artifactId>
+    		<version>2.2.6</version>
+		</dependency>
     </dependencies>
 
     <build>
@@ -31,13 +40,15 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <plugin>
               	<groupId>org.apache.maven.plugins</groupId>
     			<artifactId>maven-compiler-plugin</artifactId>
-    			<version>3.1</version>
+    			<version>3.7.0</version>
                 <configuration> 
-                	<source>1.7</source>
-                	<target>1.7</target>
+                	<source>1.8</source>
+                	<target>1.8</target>
+                	<fork>true</fork>
                     <compilerArguments>
                         <endorseddirs>${endorsed.dir}</endorseddirs>
                     </compilerArguments>
+                    <executable>C:\Program Files\Java\jdk1.8.0_151\bin\javac</executable>
                 </configuration>
             </plugin>
             <plugin>
