@@ -49,5 +49,10 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="C:/MyLibs/db-derby-10.14.1.0-lib/db-derby-10.14.1.0-lib/lib/derby.jar"/>
+	<classpathentry kind="lib" path="C:/MyLibs/db-derby-10.14.1.0-lib/db-derby-10.14.1.0-lib/lib/derbyclient.jar"/>
+	<classpathentry kind="lib" path="C:/MyLibs/db-derby-10.14.1.0-lib/db-derby-10.14.1.0-lib/lib/derbynet.jar"/>
+	<classpathentry kind="lib" path="C:/MyLibs/db-derby-10.14.1.0-lib/db-derby-10.14.1.0-lib/lib/derbyoptionaltools.jar"/>
+	<classpathentry kind="lib" path="C:/MyLibs/db-derby-10.14.1.0-lib/db-derby-10.14.1.0-lib/lib/derbyrun.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
