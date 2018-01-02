@@ -5,15 +5,16 @@
              version="2.1">
 
     <persistence-unit name="PersistChess" transaction-type="JTA">
-		<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
-		<jta-data-source>jdbc/mysqlpool</jta-data-source>
+    	<provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+		       <jta-data-source>jdbc/__default</jta-data-source>
 		<properties>
-			<property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver" />
-			<property name="javax.persistence.jdbc.url" value="jdbc:derby:C:\Users\JPA\MyDB;create=true" />
 			<property name="eclipselink.ddl-generation" value="drop-and-create-tables" />
-			<property name="eclipselink.ddl-generation.output-mode" value="database" />
-		    <property name="javax.persistence.jdbc.user" value="root"/>
-		    <property name="javax.persistence.jdbc.password" value="root"/>
+			<property name="eclipselink.ddl-generation.output-mode" value="both" />
+			<property name="eclipselink.logging.session" value="false"/>
+			<property name="eclipselink.logging.connection" value="false"/>
+			<property name="eclipselink.create-ddl-jdbc-file-name" value="createDDL_ddlGeneration.jdbc"/>
+			<property name="eclipselink.target-database" value=""/>
+			<property name="eclipselink.logging.level" value="FINE"/>
 		</properties>
         
     </persistence-unit>
