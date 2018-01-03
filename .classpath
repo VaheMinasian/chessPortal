@@ -40,8 +40,9 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="C:/MyLibs/db-derby-10.14.1.0-lib/db-derby-10.14.1.0-lib/lib/derby.jar"/>
-	<classpathentry kind="lib" path="D:/My user files/Desktop/eclipselink-2.7.1.v20171221-bd47e8f/eclipselink/jlib/eclipselink.jar"/>
-	<classpathentry kind="lib" path="D:/My user files/Desktop/eclipselink-2.7.1.v20171221-bd47e8f/eclipselink/jlib/jpa/javax.persistence.source_2.2.0.v201708071007.jar"/>
-	<classpathentry kind="lib" path="D:/My user files/Desktop/eclipselink-2.7.1.v20171221-bd47e8f/eclipselink/jlib/jpa/javax.persistence_2.2.0.v201708071007.jar"/>
+	<classpathentry kind="lib" path="C:/MyLibs/eclipselink-2.7.1.v20171221-bd47e8f/eclipselink/jlib/eclipselink.jar"/>
+	<classpathentry kind="lib" path="C:/MyLibs/eclipselink-2.7.1.v20171221-bd47e8f/eclipselink/jlib/jpa/javax.persistence_2.2.0.v201708071007.jar"/>
+	<classpathentry kind="lib" path="C:/MyLibs/eclipselink-2.7.1.v20171221-bd47e8f/eclipselink/jlib/jpa/javax.persistence.source_2.2.0.v201708071007.jar"/>
+	<classpathentry kind="lib" path="C:/MyLibs/db-derby-10.14.1.0-lib/db-derby-10.14.1.0-lib/lib/derbyclient.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

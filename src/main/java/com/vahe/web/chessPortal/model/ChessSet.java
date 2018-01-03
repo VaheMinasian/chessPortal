@@ -12,6 +12,8 @@ public class ChessSet {
 	private Integer dimension;
 	private Float price;
 	
+	public ChessSet() {}
+	
 	public ChessSet(String name, String made, Float price, Integer dimension) {
         this.name = name;
         this.made = made;
