@@ -1,9 +1,12 @@
 package com.vahe.web.chessPortal.model;
 
-import javax.persistence.*; 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
 @Entity
-public class ChessSet {
+public class Chess {
 
 	@Id @GeneratedValue(strategy=GenerationType.IDENTITY)
 	private Long id;
@@ -12,9 +15,9 @@ public class ChessSet {
 	private Integer dimension;
 	private Float price;
 	
-	public ChessSet() {}
+	public Chess() {}
 	
-	public ChessSet(String name, String made, Float price, Integer dimension) {
+	public Chess(String name, String made, Float price, Integer dimension) {
         this.name = name;
         this.made = made;
         this.price = price;
