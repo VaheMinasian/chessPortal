@@ -44,5 +44,8 @@
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="D:/My user files/Desktop/grizzly-npn-api-1.7.jar"/>
+	<classpathentry kind="lib" path="D:/My user files/Desktop/grizzly-npn-bootstrap-1.7.jar"/>
+	<classpathentry kind="lib" path="D:/My user files/Desktop/grizzly-npn-osgi-1.7.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>
