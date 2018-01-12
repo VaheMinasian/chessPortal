@@ -23,11 +23,6 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry excluding="**" kind="src" output="target/classes" path="src/main/resources">
-		<attributes>
-			<attribute name="maven.pomderived" value="true"/>
-		</attributes>
-	</classpathentry>
 	<classpathentry kind="lib" path="C:/MyLibs/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar"/>
 	<classpathentry kind="lib" path="C:/MyLibs/eclipselink-2.7.1.v20171221-bd47e8f/eclipselink/jlib/eclipselink.jar"/>
 	<classpathentry kind="lib" path="C:/MyLibs/eclipselink-2.7.1.v20171221-bd47e8f/eclipselink/jlib/jpa/javax.persistence_2.2.0.v201708071007.jar"/>
