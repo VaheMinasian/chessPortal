@@ -32,7 +32,7 @@ input[type="submit"], input[type="button"] {
 }
 
 body > header {
-    background-color: #f15b2a;
+    background-color: #8080ff;
     color: white;
 }
 
@@ -42,12 +42,12 @@ body > section, body > form > section {
 }
 
 body > footer {
-    background-color: #2a9fbc;
+    background-color: #8080ff;
     color: #e5e5e5;
 }
 
 .shoppingcart-header {
-    background-color: #f15b2a;
+    background-color: #8080ff;
     color: white;
 }
 
@@ -60,7 +60,7 @@ body > footer {
 }
 
 .shoppingcart-footer {
-    background-color: #2a9fbc;
+    background-color: #8080ff;
     color: white;
 }
 

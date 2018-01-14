@@ -14,9 +14,7 @@
                     <ui:repeat value="#{popularProducts.products}" var="product">
                         <ui:decorate template="/templates/product-summary.xhtml">
                             <ui:param name="product" value="#{product}"/>
-                            <ui:define name="product-description">
-                                <p>#{product.shortDescription}</p>
-                            </ui:define>
+                           
                         </ui:decorate>
                     </ui:repeat>
                 </h:form>

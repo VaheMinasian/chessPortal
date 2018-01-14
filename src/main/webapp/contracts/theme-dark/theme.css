@@ -32,7 +32,7 @@ input[type="submit"], input[type="button"] {
 }
 
 body > header {
-    background-color: #c43b0e;
+    background-color: #1f778d;
     color: #e5e5e5;
 }
 
@@ -47,7 +47,7 @@ body > footer {
 }
 
 .shoppingcart-header {
-    background-color: #c43b0e;
+    background-color: #1f778d;
     color: white;
 }
 

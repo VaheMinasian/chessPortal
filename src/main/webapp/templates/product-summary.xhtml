@@ -9,9 +9,7 @@
         <h:graphicImage library="chessPortal" name="Images/#{product.imageName}-250x158.jpg" 
         alt="#{product.name}"/>
         <h2>#{product.name}</h2>
-        <ui:insert name="product-description">
-            <p>Product description.</p>
-        </ui:insert>
+       
         <p>Price:
             <h:outputText value="#{product.price}">
                 <f:convertNumber type="currency" currencySymbol="$"/>
