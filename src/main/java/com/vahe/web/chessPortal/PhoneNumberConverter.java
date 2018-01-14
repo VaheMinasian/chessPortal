@@ -1,13 +1,12 @@
 package com.vahe.web.chessPortal;
 
-import javax.faces.application.FacesMessage; 
+import javax.faces.application.FacesMessage;  
 import javax.faces.component.UIComponent;
 import javax.faces.context.FacesContext;
 import javax.faces.convert.Converter;
 import javax.faces.convert.ConverterException;
 import javax.faces.convert.FacesConverter;
 import java.util.regex.Pattern;
-import com.vahe.web.validator.PhoneNumber;
 
 @FacesConverter(forClass = PhoneNumber.class)
 public class PhoneNumberConverter implements Converter {
