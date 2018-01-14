@@ -1,58 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
       xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
-<ui:composition template="templates/page-template.xhtml">
-
-    <ui:param name="pageTitle" value="Popular Products"/>
-    <ui:define name="panel-main">
-       
-        <section>
-            <h1>Popular Products</h1>
-            <h:form>
-                <ui:decorate template="/templates/product-summary.xhtml">
-                    <ui:param name="imageName" value="tmb1"/>
-                    <ui:param name="productName" value="Chess Set 1"/>
-                    <ui:param name="productPrice" value="60.00"/>
-                    <ui:define name="product-description">
-                        <p>Ice style chess set with traditional figure shapes.</p>
-                    </ui:define>
-                </ui:decorate>
-                <ui:decorate template="/templates/product-summary.xhtml">
-                    <ui:param name="imageName" value="tmb2"/>
-                    <ui:param name="productName" value="Chess Set 2"/>
-                    <ui:param name="productPrice" value="75.00"/>
-                    <ui:define name="product-description">
-                        <p>A nice and smooth touch of Sandal wood chess set.</p>
-                    </ui:define>
-                </ui:decorate>
-                <ui:decorate template="/templates/product-summary.xhtml">
-                    <ui:param name="imageName" value="tmb3"/>
-                    <ui:param name="productName" value="Chess Set 3"/>
-                    <ui:param name="productPrice" value="100.00"/>
-                    <ui:define name="product-description">
-                        <p>Modern Geometrical chess figures gives a unique taste of game.</p>
-                    </ui:define>
-                </ui:decorate>
-                <ui:decorate template="/templates/product-summary.xhtml">
-                    <ui:param name="imageName" value="tmb4"/>
-                    <ui:param name="productName" value="Chess Set 4"/>
-                    <ui:param name="productPrice" value="90.00"/>
-                    <ui:define name="product-description">
-                        <p>All rounded pieces with nice look and feel.</p>
-                    </ui:define>
-                </ui:decorate>
-                <ui:decorate template="/templates/product-summary.xhtml">
-                    <ui:param name="imageName" value="tmb5"/>
-                    <ui:param name="productName" value="Chess Set 5"/>
-                    <ui:param name="productPrice" value="80.00"/>
-                    <ui:define name="product-description">
-                        <p>Real elegant cut style chess set.</p>
-                    </ui:define>
-                </ui:decorate>
-            </h:form>
-        </section>
-    </ui:define>
-</ui:composition>
+<f:view contentType="text/html" contracts="device-desktop,theme-#{theme.name}">
+    <ui:composition template="/templates/page-template.xhtml">
+        <ui:param name="pageTitle" value="Popular Products"/>
+        <ui:define name="panel-main">
+            <section>
+                <h1>Popular Products</h1>
+                <h:form>
+                    <ui:repeat value="#{popularProducts.products}" var="product">
+                        <ui:decorate template="/templates/product-summary.xhtml">
+                            <ui:param name="product" value="#{product}"/>
+                            <ui:define name="product-description">
+                                <p>#{product.shortDescription}</p>
+                            </ui:define>
+                        </ui:decorate>
+                    </ui:repeat>
+                </h:form>
+            </section>
+        </ui:define>
+    </ui:composition>
+</f:view>
 </html>
