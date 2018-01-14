@@ -23,11 +23,8 @@
         <ui:fragment rendered="#{shoppingCart.totalQuantity == 0}">
             <p>Your <h:link value="shopping cart" outcome="shopping-cart"/> is empty.</p>
         </ui:fragment>
-        <ui:fragment rendered="#{shoppingCart.totalQuantity == 1}">
-            <p>Your <h:link value="shopping cart" outcome="shopping-cart"/> contains one item.</p>
-        </ui:fragment>
-        <ui:fragment rendered="#{shoppingCart.totalQuantity > 1}">
-            <p>Your <h:link value="shopping cart" outcome="shopping-cart"/> contains #{shoppingCart.totalQuantity} items.</p>
+        <ui:fragment rendered="#{shoppingCart.totalQuantity > 0}">
+            <p>Your <h:link value="shopping cart" outcome="shopping-cart"/> contains #{shoppingCart.totalQuantity} item(s).</p>
         </ui:fragment>
     </section>
 </ui:composition>

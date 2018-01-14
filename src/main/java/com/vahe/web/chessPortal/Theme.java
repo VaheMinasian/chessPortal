@@ -10,7 +10,7 @@ public class Theme implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
-    private String name = "light";
+    private String name = "dark";
 
     public String getName() {
         return name;
