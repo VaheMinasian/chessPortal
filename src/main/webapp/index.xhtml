@@ -9,12 +9,11 @@
         <ui:param name="pageTitle" value="Popular Products"/>
         <ui:define name="panel-main">
             <section>
-                <h1>Popular Products</h1>
+                <h1>Our Top Chess Sets</h1>
                 <h:form>
                     <ui:repeat value="#{popularProducts.products}" var="product">
                         <ui:decorate template="/templates/product-summary.xhtml">
                             <ui:param name="product" value="#{product}"/>
-                           
                         </ui:decorate>
                     </ui:repeat>
                 </h:form>

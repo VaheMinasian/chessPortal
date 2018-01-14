@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pageflow:Pageflow xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15143294872740" configfile="/chessportal/src/main/webapp/WEB-INF/faces-config.xml"/>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15143294872740" configfile="/chessportal/src/main/webapp/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="sign-in.xhtml" x="122" y="178" id="pf15159610285070" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" outlinks="pf15159610285071 pf15159610285072" inlinks="pf15159610285072" path="/sign-in.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="338" y="562" id="pf15159610285073" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" inlinks="pf15159610285071 pf15159610285074 pf151596227327310" path="/index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="*" x="122" y="562" id="pf15159610285075" outlinks="pf15159610285074 pf151596227327310" path="*"/>
+  <links id="pf15159610285071" target="pf15159610285073" source="pf15159610285070" outcome="success"/>
+  <links id="pf15159610285074" target="pf15159610285073" source="pf15159610285075" outcome="home"/>
+  <links id="pf15159610285072" target="pf15159610285070" source="pf15159610285070" outcome="failure">
+    <bendPoints d1Height="-36" d2Height="-36"/>
+    <bendPoints d1Width="-64" d1Height="-36" d2Width="-64" d2Height="-36"/>
+    <bendPoints d1Width="-64" d2Width="-64"/>
+  </links>
+  <links id="pf151596227327310" target="pf15159610285073" source="pf15159610285075" redirect="true" fromaction="#{userManager.signOut}"/>
+</pageflow:Pageflow>
