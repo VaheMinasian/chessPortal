@@ -32,23 +32,6 @@
                         <h:outputLabel for="emailAddress">E-mail address</h:outputLabel>
                         <h:inputText id="emailAddress" value="#{userDetails.user.emailAddress}" size="20"/>
 
-                        <h:outputLabel for="phoneNumber">Phone number</h:outputLabel>
-                        <h:inputText id="phoneNumber" value="#{userDetails.user.phoneNumber}" size="20">
-                            <f:validator validatorId="com.jesperdj.jsf.validator.PhoneNumber"/>
-                        </h:inputText>
-
-                        <h:outputLabel for="birthDate">Birth date</h:outputLabel>
-                        <h:inputText id="birthDate" p:type="date" value="#{userDetails.user.birthDate}">
-                            <f:convertDateTime pattern="yyyy-MM-dd"/>
-                        </h:inputText>
-
-                        <h:outputLabel for="subscribedToNewsletter">Subscribe to the newsletter?</h:outputLabel>
-                        <h:selectOneRadio id="subscribedToNewsletter"
-                                          value="#{userDetails.user.subscribedToNewsletter}">
-                            <f:selectItem itemValue="#{true}" itemLabel="Yes"/>
-                            <f:selectItem itemValue="#{false}" itemLabel="No"/>
-                        </h:selectOneRadio>
-
                         <h:outputText value=""/>
                         <h:commandButton value="Submit" action="#{userDetails.submit}"/>
                     </h:panelGrid>

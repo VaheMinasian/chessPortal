@@ -1,12 +1,8 @@
 package com.vahe.web.chessPortal;
 
-import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Past;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
-import java.util.Date;
-import com.vahe.web.chessPortal.PhoneNumber;
 
 public class User implements Serializable {
 
@@ -27,13 +23,6 @@ public class User implements Serializable {
     @ValidEmailAddress
     private String emailAddress;
 
-    private PhoneNumber phoneNumber;
-
-    @Past(message = "Your birth date must be in the past.")
-    private Date birthDate;
-
-    @NotNull(message = "Please indicate if you want to subscribe to the newsletter or not.")
-    private Boolean subscribedToNewsletter;
 
     public String getUsername() {
         return username;
@@ -75,27 +64,5 @@ public class User implements Serializable {
         this.emailAddress = emailAddress;
     }
 
-    public PhoneNumber getPhoneNumber() {
-        return phoneNumber;
-    }
-
-    public void setPhoneNumber(PhoneNumber phoneNumber) {
-        this.phoneNumber = phoneNumber;
-    }
-
-    public Date getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(Date birthDate) {
-        this.birthDate = birthDate;
-    }
-
-    public Boolean getSubscribedToNewsletter() {
-        return subscribedToNewsletter;
-    }
-
-    public void setSubscribedToNewsletter(Boolean subscribedToNewsletter) {
-        this.subscribedToNewsletter = subscribedToNewsletter;
-    }
+    
 }
