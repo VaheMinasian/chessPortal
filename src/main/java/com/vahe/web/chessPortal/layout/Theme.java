@@ -1,4 +1,4 @@
-package com.vahe.web.chessPortal;
+package com.vahe.web.chessPortal.layout;
 
 import javax.enterprise.context.SessionScoped;
 import javax.inject.Named;

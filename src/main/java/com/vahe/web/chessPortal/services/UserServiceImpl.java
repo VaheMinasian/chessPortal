@@ -1,6 +1,9 @@
-package com.vahe.web.chessPortal;
+package com.vahe.web.chessPortal.services;
 
 import javax.enterprise.context.ApplicationScoped;
+
+import com.vahe.web.chessPortal.javaBeans.User;
+
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 

@@ -1,12 +1,12 @@
-package com.vahe.web.chessPortal;
+package com.vahe.web.chessPortal.services;
 
-import javax.enterprise.context.SessionScoped;
+import javax.enterprise.context.SessionScoped; 
 import javax.faces.application.FacesMessage;
 import javax.faces.context.FacesContext;
 import javax.inject.Inject;
 import javax.inject.Named;
 
-import com.vahe.web.chessPortal.User;
+import com.vahe.web.chessPortal.javaBeans.User;
 
 import java.io.Serializable;
 

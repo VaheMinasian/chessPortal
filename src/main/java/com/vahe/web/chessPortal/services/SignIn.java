@@ -1,4 +1,4 @@
-package com.vahe.web.chessPortal;
+package com.vahe.web.chessPortal.services;
 
 import javax.enterprise.context.RequestScoped; 
 import javax.inject.Inject;

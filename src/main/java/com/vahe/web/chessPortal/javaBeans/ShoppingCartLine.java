@@ -1,4 +1,4 @@
-package com.vahe.web.chessPortal;
+package com.vahe.web.chessPortal.javaBeans;
 
 import java.math.BigDecimal;
 

@@ -1,9 +1,9 @@
 package com.vahe.web.chessPortal.checkout;
 
 
-import com.vahe.web.chessPortal.ShoppingCart;
-import com.vahe.web.chessPortal.User;
-import com.vahe.web.chessPortal.UserManager;
+import com.vahe.web.chessPortal.javaBeans.ShoppingCart; 
+import com.vahe.web.chessPortal.javaBeans.User;
+import com.vahe.web.chessPortal.services.UserManager;
 
 import javax.annotation.PostConstruct;
 import javax.faces.flow.FlowScoped;

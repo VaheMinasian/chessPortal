@@ -1,4 +1,4 @@
-package com.vahe.web.chessPortal;
+package com.vahe.web.chessPortal.services;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;
@@ -8,6 +8,8 @@ import java.util.List;
 import java.util.Map;
 
 import javax.enterprise.context.ApplicationScoped;
+
+import com.vahe.web.chessPortal.javaBeans.Product;
 
 @ApplicationScoped
 public class ServiceImplementation implements ProductService {

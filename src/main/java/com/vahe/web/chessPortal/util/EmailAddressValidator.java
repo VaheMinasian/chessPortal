@@ -1,4 +1,4 @@
-package com.vahe.web.chessPortal;
+package com.vahe.web.chessPortal.util;
 
 
 import javax.validation.ConstraintValidator;

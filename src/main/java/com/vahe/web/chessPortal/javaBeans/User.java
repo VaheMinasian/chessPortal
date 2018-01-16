@@ -1,7 +1,10 @@
-package com.vahe.web.chessPortal;
+package com.vahe.web.chessPortal.javaBeans;
 
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+
+import com.vahe.web.chessPortal.util.ValidEmailAddress;
+
 import java.io.Serializable;
 
 public class User implements Serializable {

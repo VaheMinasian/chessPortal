@@ -1,9 +1,12 @@
-package com.vahe.web.chessPortal;
+package com.vahe.web.chessPortal.javaBeans;
 
 import javax.annotation.PostConstruct;
 import javax.enterprise.context.RequestScoped;
 import javax.inject.Inject;
 import javax.inject.Named;
+
+import com.vahe.web.chessPortal.services.ProductService;
+
 import java.util.List;
 
 @Named

@@ -1,4 +1,6 @@
-package com.vahe.web.chessPortal;
+package com.vahe.web.chessPortal.services;
+
+import com.vahe.web.chessPortal.javaBeans.User;
 
 public interface UserService {
 

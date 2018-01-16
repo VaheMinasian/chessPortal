@@ -9,7 +9,8 @@ Java EE project
 Requirements to run application
   -------------------------
   The application is packaged in a web archive file (.war) which can be run by deploying to any we server.
-  Application server (Glassfish, Wildfly, TomEE, Payara...) which is better to have it integrated inside your IDE.
+  Application server (Glassfish, Wildfly, TomEE, Payara...) which is better to have it integrated inside your IDE. 
+  JRE and a web browser are required to run the application.
   
 
   TECHNOLOGIES
