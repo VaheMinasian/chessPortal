@@ -1,19 +1,30 @@
 package com.vahe.web.chessPortal.javaBeans;
 
-import java.io.Serializable;
+import java.io.Serializable; 
 import java.math.BigDecimal;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Transient;
+
+@Entity 
 public class Product implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-
+	@Id @GeneratedValue
 	private Long id;
 	private String name;
 	private String made;
 	private BigDecimal price;
 	private Integer dimension;
+	@Column(length=800)
 	private String description;	
+	@Transient
 	private String imageName;
+	
+	public Product() {}
 	
 	public Product(long id, String name, String made, BigDecimal price, Integer dimension, String description, String imageName) {
 		this.id =id;

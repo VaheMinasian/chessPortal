@@ -22,7 +22,27 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
             <version>7.0</version>
             <scope>provided</scope>
        </dependency>
-	</dependencies>
+	   <dependency>
+	   	<groupId>org.hibernate</groupId>
+	   	<artifactId>hibernate-entitymanager</artifactId>
+	   	<version>5.2.12.Final</version>
+	   </dependency>
+	   <dependency>
+	   	<groupId>org.hibernate</groupId>
+	   	<artifactId>hibernate-core</artifactId>
+	   	<version>5.2.12.Final</version>
+	   </dependency>
+	   <dependency>
+	   	<groupId>org.hibernate</groupId>
+	   	<artifactId>hibernate-tools</artifactId>
+	   	<version>5.2.8.Final</version>
+	   </dependency>
+	   <dependency>
+	   	<groupId>org.apache.derby</groupId>
+	   	<artifactId>derby</artifactId>
+	   	<version>10.14.1.0</version>
+	   </dependency>
+    </dependencies>
 
            <build>
     	<pluginManagement>
@@ -36,7 +56,7 @@ xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xs
                 	<target>1.8</target>
                 	<fork>true</fork>
                 </configuration>
-	            </plugin>
+            </plugin>
            </plugins>
         </pluginManagement>
     </build>
