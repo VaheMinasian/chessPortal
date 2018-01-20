@@ -1,6 +1,11 @@
 package com.vahe.web.chessPortal.repositories;
 
-import static org.junit.Assert.*; 
+
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+
+import java.math.BigDecimal;
 
 import javax.inject.Inject;
 
@@ -14,6 +19,8 @@ import org.junit.runner.RunWith;
 
 import com.vahe.web.chessPortal.javaBeans.Product;
 
+
+
 @RunWith(Arquillian.class)
 public class ProductRepoTest {
 
@@ -22,8 +29,22 @@ public class ProductRepoTest {
 	
 	@Test
 	public void create() throws Exception {
-		assertEquals(Long.valueOf(0), productRepo.countAll());
-		assertEquals(0, productRepo.findAll().size());
+	assertEquals(Long.valueOf(0), productRepo.countAll());
+	assertEquals(0, productRepo.findAll().size());
+	
+	//create new Chess set
+	Product product = new Product("Club", "plastic", new BigDecimal("60.00"), 60, "A comfortable and very popular product for training and tournements.", "Club");
+	product = productRepo.create(product);
+	Long productId = product.getId();
+	
+	//Check created chess set
+	assertNotNull(productId);
+	
+	//find created chess set
+	Product productFound = productRepo.find(productId);
+	
+	//check the found book
+	assertEquals("Club", productFound.getName());
 	}
 	
 	@Deployment
@@ -32,8 +53,8 @@ public class ProductRepoTest {
         return ShrinkWrap.create(JavaArchive.class)
             .addClass(ProductRepo.class)
             .addClass(Product.class)
-            .addAsManifestResource("META-INF/test-persistence.xml", "beans.xml")
-            .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
+            .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml")
+            .addAsManifestResource("META-INF/test-persistence.xml", "persistence.xml");
     }
 
 }

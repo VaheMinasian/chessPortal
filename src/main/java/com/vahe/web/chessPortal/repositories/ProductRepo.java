@@ -1,6 +1,6 @@
 package com.vahe.web.chessPortal.repositories;
 
-import java.util.List; 
+import java.util.List;  
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
@@ -31,7 +31,7 @@ public class ProductRepo {
 	}
 	
 	public List<Product> findAll(){
-		TypedQuery<Product> query = em.createQuery("SELECT b FROM Product p ORDER BY p.name DESC", Product.class);
+		TypedQuery<Product> query = em.createQuery("SELECT p FROM Product p ORDER BY p.name DESC", Product.class);
 		return query.getResultList();
 	}
 	
