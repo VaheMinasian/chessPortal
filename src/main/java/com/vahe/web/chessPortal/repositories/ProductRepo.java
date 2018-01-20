@@ -1,10 +1,17 @@
 package com.vahe.web.chessPortal.repositories;
 
+import java.util.List; 
+
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.TypedQuery;
+import javax.transaction.Transactional;
 
 import com.vahe.web.chessPortal.javaBeans.Product;
+import static javax.transaction.Transactional.TxType.REQUIRED;
+import static javax.transaction.Transactional.TxType.SUPPORTS;
 
+@Transactional(SUPPORTS)
 public class ProductRepo {
 
 	@PersistenceContext(unitName = "ChessPU")
@@ -13,13 +20,23 @@ public class ProductRepo {
 	public Product find(Long id) {
 		return em.find(Product.class, id);
 	}
-	
+	@Transactional(REQUIRED)
 	public Product create(Product product) {
 		em.persist(product);
 		return product;
 	}
-	
+	@Transactional(REQUIRED)
 	public void Delete(Long id) {
 		em.remove(em.getReference(Product.class, id));
+	}
+	
+	public List<Product> findAll(){
+		TypedQuery<Product> query = em.createQuery("SELECT b FROM Product p ORDER BY p.name DESC", Product.class);
+		return query.getResultList();
+	}
+	
+	public Long countAll() {
+		TypedQuery<Long> query = em.createQuery("SELECT COUNT(p) FROM Product p", Long.class);
+		return query.getSingleResult();
 	}
 }
