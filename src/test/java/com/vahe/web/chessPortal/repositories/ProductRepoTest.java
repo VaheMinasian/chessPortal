@@ -24,7 +24,12 @@ public class ProductRepoTest {
 	@Inject
 	private ProductRepo productRepo;
 
-	@Test
+	@Test(expected=Exception.class)
+	public void findInvalidId() {
+		productRepo.find(null);
+	}
+	
+	@Test(expected=Exception.class)
 	public void createInvalidProduct() {
 		Product pro = new Product(null, "plastic", new BigDecimal("60.00"), 60, "A comfortable and very popular product for training and tournements.", "Club");
 		productRepo.create(pro);		
@@ -38,7 +43,7 @@ public class ProductRepoTest {
 	//create new Chess set
 	Product product = new Product("Club", "plastic", new BigDecimal("60.00"), 60, "A comfortable and very popular product for training and tournements.", "Club");
 	product = productRepo.create(product);
-	int productId = product.getId();
+	Long productId = product.getId();
 	
 	//Check created chess set
 	assertNotNull(productId);

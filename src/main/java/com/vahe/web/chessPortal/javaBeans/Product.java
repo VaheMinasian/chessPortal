@@ -18,7 +18,7 @@ public class Product implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	@Id @GeneratedValue 
-	private int id;
+	private Long id;
 	@NotNull @Size(min=1, max=20)
 	private String name;
 	@NotNull @Size(min=1, max=10)
@@ -42,7 +42,7 @@ public class Product implements Serializable {
         this.description = description;
         this.imageName = imageName;
 	}
-	public int getId() {
+	public Long getId() {
 		return id;
 	}
 	public String getName() {
