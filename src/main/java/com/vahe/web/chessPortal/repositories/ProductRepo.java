@@ -17,7 +17,7 @@ public class ProductRepo {
 	@PersistenceContext(unitName = "ChessPU")
 	private EntityManager em;
 	
-	public Product find(Long id) {
+	public Product find(int id) {
 		return em.find(Product.class, id);
 	}
 	@Transactional(REQUIRED)
@@ -26,7 +26,7 @@ public class ProductRepo {
 		return product;
 	}
 	@Transactional(REQUIRED)
-	public void Delete(Long id) {
+	public void Delete(int id) {
 		em.remove(em.getReference(Product.class, id));
 	}
 	

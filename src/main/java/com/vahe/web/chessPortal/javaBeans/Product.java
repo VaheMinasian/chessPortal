@@ -8,25 +8,33 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Transient;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 
 @Entity 
 public class Product implements Serializable {
 
 	private static final long serialVersionUID = 1L;
-	@Id @GeneratedValue
-	private Long id;
+	
+	@Id @GeneratedValue 
+	private int id;
+	@NotNull @Size(min=1, max=20)
 	private String name;
+	@NotNull @Size(min=1, max=10)
 	private String made;
+	@NotNull @Min(5)
 	private BigDecimal price;
-	private Integer dimension;
-	@Column(length=800)
+	@NotNull
+	private int dimension;
+	@Column(length=800) @Size(min=1, max=300)
 	private String description;	
 	@Transient
 	private String imageName;
 	
 	public Product() {}
 	
-	public Product(String name, String made, BigDecimal price, Integer dimension, String description, String imageName) {
+	public Product(String name, String made, BigDecimal price, int dimension, String description, String imageName) {
         this.name = name;
         this.made = made;
         this.price = price;
@@ -34,7 +42,7 @@ public class Product implements Serializable {
         this.description = description;
         this.imageName = imageName;
 	}
-	public Long getId() {
+	public int getId() {
 		return id;
 	}
 	public String getName() {
@@ -46,7 +54,7 @@ public class Product implements Serializable {
 	public BigDecimal getPrice() {
 		return price;
 	}
-	public Integer getDimension() {
+	public int getDimension() {
 		return dimension;
 	}
 	public String getDescription() {
