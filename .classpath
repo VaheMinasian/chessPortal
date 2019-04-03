@@ -13,6 +13,7 @@
 	</classpathentry>
 	<classpathentry kind="src" output="target/test-classes" path="src/test/java">
 		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="optional" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
@@ -23,17 +24,18 @@
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="lib" path="C:/MyLibs/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar"/>
-	<classpathentry kind="lib" path="C:/MyLibs/eclipselink-2.7.1.v20171221-bd47e8f/eclipselink/jlib/eclipselink.jar"/>
-	<classpathentry kind="lib" path="C:/MyLibs/eclipselink-2.7.1.v20171221-bd47e8f/eclipselink/jlib/jpa/javax.persistence_2.2.0.v201708071007.jar"/>
-	<classpathentry kind="lib" path="C:/MyLibs/eclipselink-2.7.1.v20171221-bd47e8f/eclipselink/jlib/jpa/javax.persistence.source_2.2.0.v201708071007.jar"/>
-	<classpathentry kind="lib" path="C:/MyLibs/derby/lib/derby.jar"/>
-	<classpathentry kind="lib" path="C:/MyLibs/derby/lib/derbyclient.jar"/>
-	<classpathentry kind="lib" path="C:/MyLibs/grizzly-npn-api-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/MyLibs/grizzly-npn-bootstrap-1.7.jar"/>
-	<classpathentry kind="lib" path="C:/MyLibs/grizzly-npn-osgi-1.7.jar"/>
+	<classpathentry kind="lib" path="J:/lib/mysql-connector-java-5.1.44/mysql-connector-java-5.1.44-bin.jar"/>
+	<classpathentry kind="lib" path="J:/lib/eclipselink.jar"/>
+	<classpathentry kind="lib" path="J:/lib/javax.persistence_2.2.0.v201708071007.jar"/>
+	<classpathentry kind="lib" path="J:/lib/javax.persistence.source_2.2.0.v201708071007.jar"/>
+	<classpathentry kind="lib" path="J:/lib/glassfish4/glassfish/domains/domain1/lib/derby.jar"/>
+	<classpathentry kind="lib" path="J:/lib/glassfish4/glassfish/domains/domain1/lib/derbyclient.jar"/>
+	<classpathentry kind="lib" path="J:/lib/grizzly-npn-api-1.7.jar"/>
+	<classpathentry kind="lib" path="J:/lib/grizzly-npn-bootstrap-1.7.jar"/>
+	<classpathentry kind="lib" path="J:/lib/grizzly-npn-osgi-1.7.jar"/>
 	<classpathentry excluding="**" kind="src" output="target/test-classes" path="src/test/resources">
 		<attributes>
+			<attribute name="test" value="true"/>
 			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
@@ -42,9 +44,9 @@
 			<attribute name="owner.project.facets" value="jst.web"/>
 		</attributes>
 	</classpathentry>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_151">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8">
 		<attributes>
-			<attribute name="owner.project.facets" value="java"/>
+			<attribute name="maven.pomderived" value="true"/>
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="output" path="target/classes"/>
